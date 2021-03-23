@@ -1,2 +1,2 @@
 # php-bot
-A bot written in php
+Practicing making bots written in php,
