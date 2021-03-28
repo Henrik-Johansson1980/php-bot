@@ -82,6 +82,7 @@ class Request
 		stream_context_set_option($context, [
 			'http' => [
 				'timeout' => self::formatTimeout($timeout),
+				// 'proxy' => 'tcp://0.0.0.0:8080', // proxy IP
 				'header' => "User-Agent: " . self::$userAgent . "\r\n"
 			]
 		]);
@@ -108,6 +109,7 @@ class Request
 			'http' => [
 				'method' => 'HEAD',
 				'timeout' => self::formatTimeout($timeout),
+				// 'proxy' => 'tcp://0.0.0.0:8080', // proxy IP
 				'header' => "User-Agent: " . self::$userAgent . "\r\n"
 			]
 		]);
